@@ -27,7 +27,6 @@ body {
     @include flex-center();
     flex-direction: column;
     padding: 10px;
-    position: relative;
 }
 
 label {
@@ -38,6 +37,7 @@ label {
 
 input {
     height: 30px;
+    padding: 5px;
     border-radius: 4px;
     border: none;
     transition: 0.5s ease-in-out;
@@ -68,9 +68,16 @@ button {
     }
 }
 
+#reset {
+    position: absolute;
+    top: 50px;
+}
+
 #result {
     font-size: 20px;
+    margin-top: 10px;
     font-weight: 600;
     color: rgba(255, 0, 0, 0.605);
     text-transform: uppercase;
+    text-align: center;
 }
